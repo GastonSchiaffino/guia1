@@ -3,6 +3,7 @@ package com.company;
 import com.company.ejercicio1.rectangle;
 import com.company.ejercicio2.employee;
 import com.company.ejercicio3.saleItem;
+import com.company.ejercicio4.bankAccount;
 
 public class Main {
 
@@ -54,6 +55,23 @@ public class Main {
         item1.setUnitaryPrice(193);
         ///Inciso B
         System.out.println( item1.getsaleItem());
+
+        ///Ejercicio 4
+        ///Inciso 1
+        bankAccount account1 = new bankAccount();
+        account1.setBalance(15000);
+        account1.setName("Gaston Schiaffino ");
+        account1.setId(1078);
+        System.out.println(account1.getbankAccount());
+        ///Inciso 2
+        account1.credit(2500);
+        System.out.println(account1.getbankAccount());
+        ///Inciso 3
+        account1.debit(1500);
+        System.out.println(account1.getbankAccount());
+        ///Inciso 4
+        account1.debit(30000);
+
     }
 
 }
