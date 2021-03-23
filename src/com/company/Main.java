@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.ejercicio1.rectangle;
 import com.company.ejercicio2.employee;
+import com.company.ejercicio3.saleItem;
 
 public class Main {
 
@@ -42,6 +43,17 @@ public class Main {
         ///Inciso D
         employee1.increaseSalary(15);
         System.out.println("Salario Anual Aumentado: " + employee1.calculateAnnualSalary());
+
+        ///Ejercicio 3
+        saleItem item1 = new saleItem();
+
+        ///Inciso A
+        item1.setId(4);
+        item1.setDescription("Papas Pringles");
+        item1.setAmount(20);
+        item1.setUnitaryPrice(193);
+        ///Inciso B
+        System.out.println( item1.getsaleItem());
     }
 
 }
