@@ -4,6 +4,7 @@ import com.company.ejercicio1.rectangle;
 import com.company.ejercicio2.employee;
 import com.company.ejercicio3.saleItem;
 import com.company.ejercicio4.bankAccount;
+import com.company.ejercicio5.hour;
 
 public class Main {
 
@@ -71,6 +72,19 @@ public class Main {
         System.out.println(account1.getbankAccount());
         ///Inciso 4
         account1.debit(30000);
+
+
+        ///Ejercicio 5
+        hour time = new hour(23,59,59);
+        System.out.println(time);
+
+        time.addSecond();
+        System.out.println(time);
+
+        time.backSecond();
+        System.out.println(time);
+
+
 
     }
 
